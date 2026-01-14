@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+    background-size: cover;
+    background-position: center;
+}
+
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.2); /* Dark grey */
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 360px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #1e40af;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results div {
+    background: #eef2ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.info-card {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.info-card h3 {
+    margin-top: 0;
+}
+
+.info-card p {
+    margin: 8px 0;
+}
+
+.info-card .author {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
